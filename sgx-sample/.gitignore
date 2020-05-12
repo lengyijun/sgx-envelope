@@ -1,0 +1,20 @@
+*.o
+*.so
+*.a
+
+app/app
+enclave/enclave.key.pem
+interface/enclave_t.c
+interface/enclave_t.h
+interface/enclave_u.c
+interface/enclave_u.h
+
+sealeddata.bin
+secp256r1.pem
+Sensor_Data.signature
+demo_openssl/
+demo_sgx/
+
+//go output
+sgx-sample
+go

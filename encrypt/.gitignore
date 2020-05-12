@@ -1,0 +1,7 @@
+aes.bin 
+cipher.txt 
+e_aes.bin 
+encrypt 
+*.o 
+toge
+libencrypt.a
