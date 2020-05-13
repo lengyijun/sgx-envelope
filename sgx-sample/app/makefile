@@ -21,9 +21,9 @@ all: ../interface/libenclave_stub_u.a libapp.a
 
 ../interface/libenclave_stub_u.a: ../interface/enclave.edl
 
-app: app.o globals.o ocall_print_string.o decode_sgx_status.o enclave.o buffers.o enclave_state.o endianswap.o readfile.o ecall_buffer.o keygen.o crypto.o encrypt.o open_file.o
+app: app.o globals.o ocall_print_string.o decode_sgx_status.o enclave.o buffers.o enclave_state.o endianswap.o readfile.o ecall_buffer.o keygen.o crypto.o open_file.o
 
-libapp.a: app.o globals.o ocall_print_string.o decode_sgx_status.o enclave.o buffers.o enclave_state.o endianswap.o readfile.o ecall_buffer.o keygen.o crypto.o encrypt.o open_file.o  ../interface/enclave_u.o
+libapp.a: app.o globals.o ocall_print_string.o decode_sgx_status.o enclave.o buffers.o enclave_state.o endianswap.o readfile.o ecall_buffer.o keygen.o crypto.o open_file.o  ../interface/enclave_u.o
 	ar rs $@ $^
 
 clean:
